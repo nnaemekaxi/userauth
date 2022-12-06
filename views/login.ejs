@@ -1,0 +1,16 @@
+<section style="display: flex; flex-direction:column; width:600px; margin: 64px auto;">
+    <h1>LOGIN</h1>
+
+    <form action="/login" method="POST" id="login">
+        <p><%= message %></p>
+        <input type="email" name="email" id="email" required>
+        <p>Email</p>
+        <input type="password" name="password" id="password">
+        <p>Password  </p>
+        <button type="submit">LOGIN</button>
+
+        <p>Don't have an account? Sign up <a href="/register">Here</a></p>
+    </form>
+
+
+</section>

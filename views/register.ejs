@@ -1,0 +1,23 @@
+<section style="display: flex; flex-direction:column; width:600px; margin: 64px auto;">
+    <h1>REGISTER</h1>
+
+    <form action="/register" method="POST" id="register">
+        <p><%= message %></p>
+        <input type="text" name="fullname" id="fullname">
+        <p>Full Name</p>
+        <input type="email" name="email" id="email" required>
+        <p>Email</p>
+        <input type="password" name="password" id="password">
+        <p>Password</p>
+        <p id="message"></p>
+        <button type="submit">REGISTER</button>
+        <p>Already have an account? Login <a href="/login">Here</a></p>
+
+    </form>
+
+    <script>
+        if (result.status){
+            console.log("Success")
+        }
+    </script>
+</section>
