@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 .main-container{
     display: flex;
@@ -82,4 +83,103 @@ letter-spacing: 0em;
 .upload-video{
     min-height: 512px;
     display: flex;
+}
+.profile-section{
+    margin: 96px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 1%;
+
+}
+.profile-list{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.profile-list h1{
+font-size: 32px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+
+}
+.profile-button{
+    width: 40%;
+}
+.profile-section img{
+    width: 100%;
+    height: 128px;
+}
+.profile-section ul{
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+
+}
+.upload-video{
+    padding-top: 5%;
+    display: flex;
+}
+.textsarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.textsarea h1{
+font-size: 48px;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0em;
+
+}
+.textsarea p{
+font-size: 24px;
+font-weight: 500;
+line-height: 32px;
+letter-spacing: 0em;
+margin-bottom: 64px;
+}
+.textsarea button, .signout{
+    width: 40%;
+    height: 60px;
+    color: white;
+    background-color: #EC8000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.feedback{
+    width: 40%;
+    height: 60px;
+    color: #EC8000;
+    background-color: white;
+    border: 1px solid #EC8000;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.textsarea button:hover, .signout:hover{
+    color: #EC8000;
+    background-color: white;
+    border: 1px solid #EC8000;
+}
+.feedback:hover{
+    color: white;
+    background-color: #EC8000;
+    border: none;
+}
+.upload-video img{
+    width: 100%;
+    height: 300px;
 }
