@@ -17,6 +17,10 @@
                 <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
                 <li><a href="#"><i class="fa-solid fa-eye"></i></i>Explore</a></li>
                 <li><a href="#" style="color: #0560FA; border-color:#0560FA;"><i class="fa-solid fa-user"></i> Profile</a></li>
+                <ul id="profile-ul">
+                    <li class="profile-list"><a href="#">Upload Videos</a></li>
+                    <li class="profile-list"><a href="#" style="color: #0560FA; border-color:#0560FA;"> Update Info</a></li>
+                </ul>
                 <li><a href="#"><i class="fa-sharp fa-solid fa-photo-film"></i>Library</a></li>
                 <li><a href="#"><i class="fa-solid fa-arrow-trend-up"></i>Trending</a></li>
                 <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
@@ -50,5 +54,21 @@
                     </div>
             </section>
     </main>
+    <script>
+        let profile = document.getElementById("profile");
+        let profileUl = document.getElementById("profile-ul");
+        profileUl.style.display = "none";
+
+        profile.addEventListener("click", function(){
+            if (profileUl.style.display === "none"){
+                profileUl.style = {
+                display: "inline",
+                color: "white"
+            };
+            } else{
+                profileUl.style.display = "none"
+            }
+        })
+    </script>
 </body>
 </html>

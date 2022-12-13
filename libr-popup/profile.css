@@ -17,6 +17,12 @@ a{
     gap: 8px;
     padding-bottom: 32px;
 }
+#profile-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: white;
+}
 .side-bar-left{
     width: 17%;
     display: flex;
