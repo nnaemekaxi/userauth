@@ -97,6 +97,7 @@ letter-spacing: 0em;
 }
 .top-menu{
     display: flex;
+    gap: 10%;
 }
 .history-title {
     display: flex;

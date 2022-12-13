@@ -91,6 +91,7 @@ letter-spacing: 0em;
 }
 .top-menu{
     display: flex;
+    gap: 10%;
 }
 .search input{
     width: 80%;
