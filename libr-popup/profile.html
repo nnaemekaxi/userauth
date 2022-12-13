@@ -11,17 +11,12 @@
 </head>
 <body>
     <main class="main-container">
-        <section class="side-bar-left">
-            <i class="fa-solid fa-bars"></i>
-            <ul class="side-bar-left-list">
+        <section class="side-bar-left" id="left-bar">
+            <i class="fa-solid fa-bars" id="nav-menu"></i>
+            <ul class="side-bar-left-list" id="nav-menu-list">
                 <li><a href="#"><i class="fa-sharp fa-solid fa-house"></i> Home</a></li>
                 <li><a href="#"><i class="fa-solid fa-eye"></i></i>Explore</a></li>
-                <li style="color: #0560FA; border-color:#0560FA;" id="profile"><i class="fa-solid fa-user"></i> Profile
-                </li> <ul id="profile-ul">
-                        <li class="profile-list"><a href="#" style="color: #0560FA; border-color:#0560FA;">Upload Videos</a></li>
-                        <li class="profile-list"><a href="#"> Update Info</a></li>
-                    </ul>
-                
+                <li style="color: #0560FA; border-color:#0560FA;" id="profile"><i class="fa-solid fa-user"></i> Profile</li> 
                 <li><a href="#"><i class="fa-sharp fa-solid fa-photo-film"></i>Library</a></li>
                 <li><a href="#"><i class="fa-solid fa-arrow-trend-up"></i>Trending</a></li>
                 <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
@@ -69,18 +64,21 @@
     </main>
 
     <script>
-        let profile = document.getElementById("profile");
-        let profileUl = document.getElementById("profile-ul");
-        profileUl.style.display = "none";
+        let navMenu = document.getElementById("nav-menu");
+        let navMenuList = document.getElementById("nav-menu-list");
+        let leftBar = document.getElementById("left-bar");
+        navMenuList.style.display = "none";
+        leftBar.style.background = "none"
+        
+        
 
-        profile.addEventListener("click", function(){
-            if (profileUl.style.display === "none"){
-                profileUl.style = {
-                display: "inline",
-                color: "white"
-            };
+        navMenu.addEventListener("click", function(){
+            if (navMenuList.style.display === "none"){
+                navMenuList.style.display = "flex";
+                leftBar.style.background = "#FFB154"
             } else{
-                profileUl.style.display = "none"
+                navMenuList.style.display = "none"
+                leftBar.style.background = "none"
             }
         })
     </script>

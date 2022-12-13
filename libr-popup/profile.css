@@ -6,6 +6,7 @@
 }
 .main-container{
     display: flex;
+    background-color: #ffefdd;
 
 }
 a{
@@ -28,11 +29,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4% 6%;
+    padding: 1% 6%;
     background-color: #FFB154;
 }
 .side-bar-left ul{
-    margin-top: 32px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -40,7 +41,9 @@ a{
     justify-content: center;
     gap: 32px;
 }
-.fa-bars{
+.fa-solid{
+    font-size: 60px;
+}.fa-bars{
     width: 48px;
     height: 16px;
     font-weight: bold;
