@@ -41,9 +41,13 @@ a{
     justify-content: center;
     gap: 32px;
 }
-.fa-solid{
+.fa-solids{
     font-size: 60px;
-}.fa-bars{
+}
+.fa-solidz{
+    font-size: 36px;
+}
+.fa-bars{
     width: 48px;
     height: 16px;
     font-weight: bold;
@@ -97,6 +101,9 @@ letter-spacing: 0em;
     height: 30px;
     border: none;
     border-radius: 8px;
+}
+.top-menu{
+    display: flex;
 }
 .upload-video{
     min-height: 512px;

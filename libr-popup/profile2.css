@@ -34,8 +34,11 @@ a{
     justify-content: center;
     gap: 32px;
 }
-.fa-solid{
+.fa-solids{
     font-size: 60px;
+}
+.fa-solidz{
+    font-size: 36px;
 }
 .fa-bars{
     width: 48px;
@@ -85,6 +88,9 @@ letter-spacing: 0em;
     align-items: center;
     background-color: white;
     padding: 0 3%;
+}
+.top-menu{
+    display: flex;
 }
 .search input{
     width: 80%;
